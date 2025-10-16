@@ -1,13 +1,11 @@
-version: '3.8'
-
 services:
   db:
     image: mysql:8.0
-    container_name: q2_mysql_implementation
+    container_name: q3_mysql_implementation
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root123
-      MYSQL_DATABASE: inventory
+      MYSQL_DATABASE: uts_fleet_test
       MYSQL_USER: admin
       MYSQL_PASSWORD: admin123
     volumes:
@@ -17,7 +15,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    container_name: sensor_inventory_phpmyadmin
+    container_name: q3_mysql_phpmyadmin
     restart: always
     ports:
       - "8080:80"

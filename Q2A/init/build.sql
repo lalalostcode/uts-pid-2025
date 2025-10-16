@@ -15,12 +15,13 @@ CREATE TABLE sensors (
 -- Insert Data
 
 INSERT INTO trucks (truck_id, model, year) VALUES
-('TRK007', 'ESEMKA', 2023),
-('TRK015', 'Isuzu Elf', 2021),
-('TRK010', 'EMBEGE', 2019);
+('TRK011', 'ESEMKA', 2023),
+('TRK012', 'Isuzu Elf', 2021),
+('TRK013', 'EMBEGE', 2019);
 
 INSERT INTO sensors (sensor_id, truck_id, sensor_type) VALUES
-('SNS001', 'TRK007', 'Temperature'),
-('SNS002', 'TRK007', 'Pressure'),
-('SNS003', 'TRK015', 'Humidity'),
-('SNS004', 'TRK010', 'Temperature');
+('SNS011', 'TRK011', 'Temperature'),
+('SNS012', 'TRK012', 'Humidity'),
+('SNS013', 'TRK013', 'Humidity'),
+('SNS014', 'TRK011', 'Temperature'),
+('SNS015', 'TRK012', 'Temperature');
